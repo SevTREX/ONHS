@@ -15,7 +15,7 @@ html {
             z-index: -1;
             position: fixed;
             top: 0px;
-            width: 100%;
+            width: auto;
             -webkit-filter: blur(5px);
             filter: blur(5px);
         }
@@ -52,7 +52,7 @@ html {
         }
         .top-class {
             margin-top: 100px;
-            height: 520px;
+            height: 525px;
 
             .bg {
                 z-index: -999;
@@ -70,6 +70,7 @@ html {
                 margin-top: 400px;
 
                 .title {
+                    width: auto;
                     text-align: center;
                     font-weight: 300;
                 }
@@ -79,24 +80,51 @@ html {
         .second-class {
             background-color: var(--blue-theme);
             height: 200px;
+            padding-bottom: 20px;
 
             .contact-title {
                 color: black;
                 margin: auto;
-                width: 100px;
-                padding-top: 20px;
+                width: 150px;
+                padding: 20px;
                 font-weight: 300;
+                text-align: center;
             }
             .contacts-con {
                 width: 200px;
                 margin: auto;
                 border: 2px solid black;
                 border-radius: 5px;
+                padding-bottom: 10px;
+                
+                .con-con {
+                    display: flex;
+                    width: 180px;
+                    margin: auto;
+                    height: 50px;
+                    text-decoration: none;
+                    justify-content: center;
+
+                    .contact-logo {
+                        width: 25px;
+                        height: 25px;
+                        margin: 20px 10px 0px 0px;
+                    }
+                    .contact {
+                        margin: 20px 0px;
+                        color: black;
+                    }
+                }
+                .con-con:hover {
+                    transform: scale(1.1);
+                    transition: all .1s ease-in-out;
+                }
             }
         }
 
         .third-class {
             height: 300px;
+            background-color: rgb(165, 165, 165);
         }
     }
 }
