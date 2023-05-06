@@ -51,36 +51,55 @@ html body .navbar .menu-list .menu-item:hover {
   transform: scale(1.1);
   transition: all 0.1s ease-in-out;
 }
-html body .top-class {
-  margin-top: 100px;
-  height: 575px;
-}
-html body .top-class .logo-con {
-  margin-top: 350px;
+html body .history-class {
   width: 100%;
+  box-shadow: 0px 20px 0px var(--blue-theme);
+}
+html body .history-class .pic-con {
+  width: 100%;
+  margin-top: 150px;
   display: flex;
   justify-content: space-around;
 }
-html body .top-class .logo-con .logo {
-  width: 90px;
+html body .history-class .pic-con .pic {
+  width: 70%;
+  box-shadow: 0px 7px 15px black;
+  border-radius: 10px;
 }
-html body .top-class .title-con {
-  margin: auto;
-  width: 500px;
-}
-html body .top-class .title-con .title {
-  width: auto;
-  text-align: center;
-  font-weight: 300;
-  margin: 15px 0px;
-}
-html body .blue-bar {
-  background-color: var(--blue-theme);
-  height: 20px;
-}
-html body .sec-class {
+html body .history-class .history-con {
   height: auto;
-  background-color: rgb(165, 165, 165);
+  width: 100%;
+  background-color: var(--gray-theme);
+  margin-top: 120px;
+}
+html body .history-class .history-con .onhs-history {
+  margin: 0px;
+  padding: 40px;
+}
+html body .vismiss-class {
+  padding-top: 200px;
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+html body .vismiss-class .title-con .title {
+  margin: 0px;
+  text-align: center;
+}
+html body .vismiss-class .vision-con .vision-title {
+  margin-top: 100px;
+}
+html body .vismiss-class .mission-con {
+  margin-top: 50px;
+}
+html body .vismiss-class .mission-con .mission span {
+  font-weight: bold;
+}
+html body .vismiss-class .value-con {
+  margin-top: 50px;
+  padding-bottom: 100px;
+  margin-bottom: 20px;
+  box-shadow: 0px 20px 0px var(--blue-theme);
 }
 
 @media only screen and (max-width: 1263px) {
@@ -93,29 +112,33 @@ html body .sec-class {
   }
 }
 @media only screen and (max-width: 570px) {
-  html body .top-class .title-con {
-    margin: auto;
-    width: 480px;
-    margin-top: 400px;
+  html body .main-bg {
+    z-index: -1;
+    position: fixed;
+    top: 0px;
+    width: 900px;
+    filter: blur(5px);
   }
-  html body .top-class .title-con .title {
-    width: 250px;
-    text-align: center;
-    font-weight: 300;
-    margin: auto;
-    font-size: auto;
+  html body .history-class .history-con .onhs-history {
+    padding: 20px;
+    font-size: medium;
   }
 }
 @media only screen and (max-width: 440px) {
+  html body .main-bg {
+    z-index: -1;
+    position: fixed;
+    top: 0px;
+    width: 700px;
+    filter: blur(5px);
+  }
   html body .navbar .menu-list .menu-item {
     font-size: small;
     list-style-type: none;
     padding: 2.8rem 1.3rem 0 1.3rem;
   }
-  html body .top-class .title-con {
-    width: auto;
+  html body .history-class .history-con .onhs-history {
+    padding: 20px;
+    font-size: small;
   }
-  html body .top-class .title-con .title {
-    font-size: large;
-  }
-}/*# sourceMappingURL=onhs.css.map */
+}/*# sourceMappingURL=about.css.map */

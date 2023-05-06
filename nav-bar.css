@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * { font-family: poppins; }
-:root { 
-    --blue-theme: #3cb8ff;
-    --gray-theme: rgb(165, 165, 165);
-}
+:root { --blue-theme: #3cb8ff; }
 
 html {
     scroll-behavior: smooth;
@@ -53,44 +50,6 @@ html {
                 }
             }
         }
-        .top-class {
-            margin-top: 100px;
-            height: 575px;
-
-            .logo-con {
-                margin-top: 350px;
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-
-                .logo {
-                    width: 90px;
-                }
-            }
-
-            .title-con {
-                margin: auto;
-                width: 500px;
-                
-
-                .title {
-                    width: auto;
-                    text-align: center;
-                    font-weight: 300;
-                    margin: 15px 0px;
-                }
-            }
-        }
-
-        .blue-bar {
-            background-color: var(--blue-theme);
-            height: 20px;
-        }
-
-        .sec-class {
-            height: auto;
-            background-color: rgb(165, 165, 165);
-        }
     }
 }
 
@@ -116,21 +75,9 @@ html {
     html {
         body {
 
-            .top-class {
+            .history-class {
 
-                .title-con {
-                    margin: auto;
-                    width: 480px;
-                    margin-top: 400px;
-
-                    .title {
-                        width: 250px;
-                        text-align: center;
-                        font-weight: 300;
-                        margin: auto;
-                        font-size: auto;
-                    }
-                }
+                
             }
         }
     }
@@ -154,7 +101,7 @@ html {
                 }
             }
 
-            .top-class {
+            .history-class {
 
                 .title-con {
                     width: auto;

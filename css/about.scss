@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * { font-family: poppins; }
-:root { 
+:root {
     --blue-theme: #3cb8ff;
     --gray-theme: rgb(165, 165, 165);
 }
@@ -53,43 +53,70 @@ html {
                 }
             }
         }
-        .top-class {
-            margin-top: 100px;
-            height: 575px;
-
-            .logo-con {
-                margin-top: 350px;
+        .history-class {
+            width: 100%;
+            box-shadow: 0px 20px 0px var(--blue-theme);
+            .pic-con {
                 width: 100%;
+                margin-top: 150px;
                 display: flex;
                 justify-content: space-around;
 
-                .logo {
-                    width: 90px;
+                .pic {
+                    width: 70%;
+                    box-shadow: 0px 7px 15px black;
+                    border-radius: 10px;
                 }
             }
+            .history-con {
+                height: auto;
+                width: 100%;
+                background-color: var(--gray-theme);
+                margin-top: 120px;
+                
+                .onhs-history {
+                    margin: 0px;
+                    padding: 40px
+                }
+            }
+        }
+        .vismiss-class {
+            padding-top: 200px;
+            height: auto;
+            width: 100%;
+            text-align: center;
 
             .title-con {
-                margin: auto;
-                width: 500px;
-                
-
                 .title {
-                    width: auto;
+                    margin: 0px;
                     text-align: center;
-                    font-weight: 300;
-                    margin: 15px 0px;
                 }
             }
-        }
+            .vision-con {
 
-        .blue-bar {
-            background-color: var(--blue-theme);
-            height: 20px;
-        }
+                .vision-title {
+                    margin-top: 100px;
+                }
 
-        .sec-class {
-            height: auto;
-            background-color: rgb(165, 165, 165);
+                .vision {
+                }
+            }
+            .mission-con {
+                margin-top: 50px;
+
+                .mission {
+
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+            .value-con {
+                margin-top: 50px;
+                padding-bottom: 100px;
+                margin-bottom: 20px;
+                box-shadow: 0px 20px 0px var(--blue-theme);
+            }
         }
     }
 }
@@ -116,19 +143,22 @@ html {
     html {
         body {
 
-            .top-class {
+            .main-bg {
+                z-index: -1;
+                position: fixed;
+                top: 0px;
+                width: 900px;
+                -webkit-filter: blur(5px);
+                filter: blur(5px);
+            }
 
-                .title-con {
-                    margin: auto;
-                    width: 480px;
-                    margin-top: 400px;
+            .history-class {
 
-                    .title {
-                        width: 250px;
-                        text-align: center;
-                        font-weight: 300;
-                        margin: auto;
-                        font-size: auto;
+                .history-con {
+
+                    .onhs-history {
+                        padding: 20px;
+                        font-size: medium;
                     }
                 }
             }
@@ -142,6 +172,15 @@ html {
 
         body {
 
+            .main-bg {
+                z-index: -1;
+                position: fixed;
+                top: 0px;
+                width: 700px;
+                -webkit-filter: blur(5px);
+                filter: blur(5px);
+            }
+
             .navbar {
 
                 .menu-list {
@@ -154,14 +193,13 @@ html {
                 }
             }
 
-            .top-class {
+            .history-class {
 
-                .title-con {
-                    width: auto;
-
-                    .title {
-
-                        font-size: large;
+                .history-con {
+                    
+                    .onhs-history {
+                        padding: 20px;
+                        font-size: small;
                     }
                 }
             }
