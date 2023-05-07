@@ -93,10 +93,12 @@ html body .sec-class {
   }
 }
 @media only screen and (max-width: 570px) {
+  html body .top-class .logo-con .logo {
+    width: 70px;
+  }
   html body .top-class .title-con {
     margin: auto;
     width: 480px;
-    margin-top: 400px;
   }
   html body .top-class .title-con .title {
     width: 250px;

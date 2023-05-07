@@ -55,7 +55,7 @@ html {
         }
         .history-class {
             width: 100%;
-            box-shadow: 0px 20px 0px var(--blue-theme);
+            
             .pic-con {
                 width: 100%;
                 margin-top: 150px;
@@ -68,11 +68,16 @@ html {
                     border-radius: 10px;
                 }
             }
+            .gray-line {
+                height: 50px;
+                background-image: linear-gradient(transparent, var(--gray-theme));
+                margin-top: 120px;
+            }
             .history-con {
                 height: auto;
                 width: 100%;
                 background-color: var(--gray-theme);
-                margin-top: 120px;
+                
                 
                 .onhs-history {
                     margin: 0px;
@@ -80,11 +85,16 @@ html {
                 }
             }
         }
+        .gray-line-2 {
+            height: 50px;
+            background-image: linear-gradient(var(--gray-theme), transparent);
+        }
         .vismiss-class {
             padding-top: 200px;
             height: auto;
             width: 100%;
             text-align: center;
+            backdrop-filter: blur(15px);
 
             .title-con {
                 .title {
@@ -115,8 +125,11 @@ html {
                 margin-top: 50px;
                 padding-bottom: 100px;
                 margin-bottom: 20px;
-                box-shadow: 0px 20px 0px var(--blue-theme);
             }
+        }
+        .blue-line {
+            height: 30px;
+            background-image: linear-gradient(transparent, var(--blue-theme));
         }
     }
 }

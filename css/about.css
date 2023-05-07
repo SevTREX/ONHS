@@ -53,7 +53,6 @@ html body .navbar .menu-list .menu-item:hover {
 }
 html body .history-class {
   width: 100%;
-  box-shadow: 0px 20px 0px var(--blue-theme);
 }
 html body .history-class .pic-con {
   width: 100%;
@@ -66,21 +65,31 @@ html body .history-class .pic-con .pic {
   box-shadow: 0px 7px 15px black;
   border-radius: 10px;
 }
+html body .history-class .gray-line {
+  height: 50px;
+  background-image: linear-gradient(transparent, var(--gray-theme));
+  margin-top: 120px;
+}
 html body .history-class .history-con {
   height: auto;
   width: 100%;
   background-color: var(--gray-theme);
-  margin-top: 120px;
 }
 html body .history-class .history-con .onhs-history {
   margin: 0px;
   padding: 40px;
+}
+html body .gray-line-2 {
+  height: 50px;
+  background-image: linear-gradient(var(--gray-theme), transparent);
 }
 html body .vismiss-class {
   padding-top: 200px;
   height: auto;
   width: 100%;
   text-align: center;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 html body .vismiss-class .title-con .title {
   margin: 0px;
@@ -99,7 +108,10 @@ html body .vismiss-class .value-con {
   margin-top: 50px;
   padding-bottom: 100px;
   margin-bottom: 20px;
-  box-shadow: 0px 20px 0px var(--blue-theme);
+}
+html body .blue-line {
+  height: 30px;
+  background-image: linear-gradient(transparent, var(--blue-theme));
 }
 
 @media only screen and (max-width: 1263px) {
